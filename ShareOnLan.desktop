@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Icon=emblem-shared-symbolic
+Exec=shareonlan %f
+Name=Share On Lan
+Comment=Share a file or directory on the local area network with a graphical interface
