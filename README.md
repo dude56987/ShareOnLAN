@@ -3,8 +3,7 @@ ShareOnLAN
 
 - Share file on the LAN with a graphical interface
 - Designed to be integrated with Thunar or other file managers
-- Provides a simple way to integrate sharing files with woof into file managers
-- Uses [Zenity](https://wiki.gnome.org/Projects/Zenity) to provide a interface to [Woof](http://www.home.unix-ag.org/simon/woof.html)
+- Uses [Zenity](https://wiki.gnome.org/Projects/Zenity) to provide a graphical interface to [Woof](http://www.home.unix-ag.org/simon/woof.html)
 
 ## Command Line Usage
 
