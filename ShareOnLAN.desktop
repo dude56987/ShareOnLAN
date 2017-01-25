@@ -5,5 +5,5 @@ Type=Application
 NoDisplay=true
 Icon=emblem-shared-symbolic
 Exec=shareonlan %f
-Name=Share On Lan
+Name=Share On LAN
 Comment=Share a file or directory on the local area network with a graphical interface

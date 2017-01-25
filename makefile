@@ -22,11 +22,11 @@ test:
 	########################################################################
 	# Test sharing a directory
 	########################################################################
-	bash ShareOnLan.sh ./
+	bash ShareOnLAN.sh ./
 	########################################################################
 	# Test sharing one file
 	########################################################################
-	bash ShareOnLan.sh ShareOnLan.sh
+	bash ShareOnLAN.sh ShareOnLAN.sh
 install: build
 	sudo gdebi --no ShareOnLan_UNSTABLE.deb
 uninstall:
@@ -43,9 +43,9 @@ build-deb:
 	mkdir -p debian/usr/share;
 	mkdir -p debian/usr/share/applications;
 	# copy over the launcher program
-	cp -vf ShareOnLan.desktop ./debian/usr/share/applications/ShareOnLan.desktop
+	cp -vf ShareOnLAN.desktop ./debian/usr/share/applications/ShareOnLAN.desktop
 	# copy over the update script and the launcher
-	cp -vf ShareOnLan.sh ./debian/usr/bin/shareonlan
+	cp -vf ShareOnLAN.sh ./debian/usr/bin/shareonlan
 	# make the program executable
 	chmod +x ./debian/usr/bin/shareonlan
 	# Create the md5sums file
