@@ -28,7 +28,7 @@ test:
 	########################################################################
 	bash ShareOnLAN.sh ShareOnLAN.sh
 install: build
-	sudo gdebi --no ShareOnLan_UNSTABLE.deb
+	sudo gdebi --no ShareOnLAN_UNSTABLE.deb
 uninstall:
 	sudo apt-get purge shareonlan
 installed-size:
@@ -66,6 +66,6 @@ build-deb:
 	chmod -Rv u+w debian/
 	# build the package
 	dpkg-deb --build debian
-	cp -v debian.deb ShareOnLan_UNSTABLE.deb
+	cp -v debian.deb ShareOnLAN_UNSTABLE.deb
 	rm -v debian.deb
 	rm -rv debian
