@@ -41,11 +41,15 @@ while ps -e | grep $serverId;do
 	# if the user kills the gui kill the webserver;
 	if ! ps -e | grep $guiId;then
 		kill $serverId;
+		# force kill the program if regular kill signals do not work
+		kill -9 $serverId;
 	fi;
 	# sleep 3 seconds between checks on subprocesses
 	sleep 3;
 done;
 # kill the GUI component when the server quits;
 kill $guiId;
+kill -9 $guiId;
 # kill the server if it was somehow not killed prevously
 kill $serverId;
+kill -9 $serverId;
