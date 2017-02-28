@@ -69,3 +69,10 @@ build-deb:
 	cp -v debian.deb ShareOnLAN_UNSTABLE.deb
 	rm -v debian.deb
 	rm -rv debian
+report:
+	# cleanup before report
+	rm -rv report || echo "Already done..."
+	rm *.deb || echo "Already done..."
+	rm Installed-Size.txt || echo "Already done..."
+	# generate the project report
+	project-report
