@@ -2,8 +2,17 @@ ShareOnLAN
 ==========
 
 - Share file on the LAN with a graphical interface
+- Generates a QR code of the link in graphical and console environments
 - Designed to be integrated with Thunar or other file managers
-- Uses [Zenity](https://wiki.gnome.org/Projects/Zenity) to provide a graphical interface to [Woof](http://www.home.unix-ag.org/simon/woof.html)
+- Uses [YAD](https://sourceforge.net/projects/yad-dialog/) to provide a graphical interface to [Woof](http://www.home.unix-ag.org/simon/woof.html)
+
+## Firewall Rules
+
+For Share On LAN to work you must open TCP port 9119 on your computer.
+
+If you are using UFW you can use the below to let traffic though.
+
+	ufw allow proto tcp from any to any port 9119
 
 ## Command Line Usage
 

@@ -5,6 +5,6 @@ Maintainer: Carl J Smith <BM-NBHLt5EUFVEbRCmrbVrfCyaB2c8d24U9>
 Installed-Size: 72
 Priority: optional
 Architecture: all
-Depends: woof, zenity
+Depends: woof, yad, qrencode
 Description: Share a file or directory on the lan using a graphical interface.
  Share a file or directory over the LAN using a zenity based interface and woof on the back end as the temporary file server..
